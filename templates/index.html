@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html >
+<!--From https://codepen.io/frytyler/pen/EGdtg-->
+<head>
+  <meta charset="UTF-8">
+  <title>ML API</title>
+  <link href='https://fonts.googleapis.com/css?family=Pacifico' rel='stylesheet' type='text/css'>
+<link href='https://fonts.googleapis.com/css?family=Arimo' rel='stylesheet' type='text/css'>
+<link href='https://fonts.googleapis.com/css?family=Hind:300' rel='stylesheet' type='text/css'>
+<link href='https://fonts.googleapis.com/css?family=Open+Sans+Condensed:300' rel='stylesheet' type='text/css'>
+  
+</head>
+
+<body>
+ <div class="login">
+	<h1>Stroke Prediction Analysis</h1>
+
+     <!-- Main Input For Receiving Query to our ML -->
+    <form action="{{ url_for('predict')}}"method="post">
+
+        <label for="gender"> Choose Patient's Gender : </label>
+        <select id='gender' name='gender'>
+            <option value="0">Male</option>
+            <option value="1">Female</option>
+        </select>
+        <br>
+        <br>
+        <br>
+        
+        <label for="age"> Enter Age : </label>
+    	<input type="text" name="age" placeholder="age" required="required" />
+        <br>
+        <br>
+        <br>
+
+        <label for="hypertension"> Does Patient Have Hypertension : </label>
+        <select id='hypertension' name='hypertension'>
+            <option value="1">Yes</option>
+            <option value="0">No</option>
+        </select>
+        <br>
+        <br>
+        <br>
+
+        <label for="heart_disease"> Does Patient Have Heart Disease : </label>
+        <select id='heart_disease' name='Heart Disease'>
+            <option value="1">Yes</option>
+            <option value="0">No</option>
+        </select>
+        <br>
+        <br>
+        <br>
+
+        <label for="ever_married"> Marital Status of the Patient : </label>
+        <select id='ever_married' name='Marital Status'>
+            <option value="1">Yes</option>
+            <option value="0">No</option>
+        </select>
+        <br>
+        <br>
+        <br>
+        
+        <label for="residence_type"> Patient's Residence Type : </label>
+        <select id='residence_type' name='Residence Type'>
+            <option value="1">Urban</option>
+            <option value="0">Rural</option>
+        </select>
+        <br>
+        <br>
+        <br>
+        
+        
+        <label for="avg_glucose_level"> Enter Average Glucose Level : </label>
+    	<input type="text" name="Average Glucose Level" placeholder="Average Glucose Level" required="required" />
+        <br>
+        <br>
+        <br>
+        
+        <label for="bmi"> Enter Body Mass Index: </label>
+		<input type="text" name="Body Mass Index" placeholder="Body Mass Index" required="required" />
+        <br>
+        <br>
+        <br>
+
+
+        <label for="Work Type"> Patient's Work Type: </label>
+        <select id='work_type' name= Work Type>
+            <option value="0">Government Job</option>
+            <option value="1">Never Worked</option>
+            <option value="2">Private Job</option>
+            <option value="3">Self Employed</option>
+            <option value="4">Children</option>
+        </select>
+        <br>
+        <br>
+        <br>
+
+        <label for="Smoking Status"> Patient's Smoking Status: </label>
+        <select id='smoking_status' name= Smoking Status>
+            <option value="0">Formerly Smokes</option>
+            <option value="1">Never Smoked</option>
+            <option value="2">Smokes</option>
+            <option value="3">Unknown</option>
+        </select>
+        <br>
+        <br>
+        <br>
+
+
+
+
+        
+        <button type="submit" class="btn btn-primary btn-block btn-large">Predict</button>
+    </form>
+
+   <br>
+   <br>
+   
+
+   <h1<center><b>{{ prediction_text }} </b></center></h1>
+    
+
+ </div>
+
+
+</body>
+</html>
