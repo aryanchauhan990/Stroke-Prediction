@@ -27,3 +27,8 @@ This dataset is used to predict whether a patient is likely to get stroke based 
 9. bmi: body mass index
 10. smoking_status: "formerly smoked", "never smoked", "smokes" or "Unknown"*
 11. stroke: 1 if the patient had a stroke or 0 if not
+
+
+### I have also deployed this project using heroku app , please have a look 
+
+ https://stroke-predictionapp.herokuapp.com/                  
