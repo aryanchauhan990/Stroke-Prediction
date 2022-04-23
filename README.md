@@ -32,3 +32,18 @@ This dataset is used to predict whether a patient is likely to get stroke based 
 ### I have also deployed this project using heroku app , please have a look 
 
  https://stroke-predictionapp.herokuapp.com/                  
+
+
+## Some plot for EDA
+
+1) Plot categorical columns 
+
+![image](https://user-images.githubusercontent.com/54737469/164888773-cc3fec31-c94a-4af0-819a-d43ac559c337.png)
+
+2) Distribution fo bmi feature
+
+![image](https://user-images.githubusercontent.com/54737469/164888797-770dab46-44e9-446d-889d-753e40ddb7ad.png)
+
+3) Feature Importance plot
+
+![image](https://user-images.githubusercontent.com/54737469/164888822-23f60dcd-a347-4323-a89f-e89d070eaf62.png)
